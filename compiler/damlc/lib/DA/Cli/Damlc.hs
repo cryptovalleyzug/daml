@@ -193,7 +193,7 @@ cmdTest numProcessors =
     junitOutput = optional $ strOption $ long "junit" <> metavar "FILENAME" <> help "Filename of JUnit output file"
     colorOutput = switch $ long "color" <> help "Colored test results"
     showCoverageOpt = switch $ long "show-coverage" <> help "Show detailed test coverage"
-    runAllTests = switch $ long "all" <> help "Run all tests of every module"
+    runAllTests = switch $ long "all" <> help "Run tests in current project as well as dependencies"
 
 runTestsInProjectOrFiles ::
        ProjectOpts
